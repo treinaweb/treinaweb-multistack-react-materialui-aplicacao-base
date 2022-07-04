@@ -1,6 +1,6 @@
 
 import './App.css';
-import Contador from './components/MeuComponente/MeuComponente'
+import Contador from './components/MeuComponente'
 
 function App() {
   return (
