@@ -1,6 +1,4 @@
-
-import './App.css';
-import ListaCursos from './components/ListaCursos/ListaCursos';
+import { Button } from '@mui/material';
 import useOnlineStatus from './data/hooks/useOnlineStatus';
 
 function App() {
@@ -10,6 +8,7 @@ function App() {
   return (
     <div>
       {isOnline ? 'Você está online' : 'Você está off-line'}
+      <Button variant='contained'>Clique aqui!</Button>
     </div>
   );
 }
