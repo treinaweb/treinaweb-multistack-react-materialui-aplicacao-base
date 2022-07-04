@@ -1,17 +1,18 @@
 
 import myStyle from './contador.module.css'
+import { useState } from 'react'
 
 function Contador(props) {
-    const numero = 1
+    const [numero, setNumero] = useState(0)
+
 
     return (
         <div className={myStyle['meu-contador']}>
-            Contador: {numero > 2 ? "SIM" : 'NÃO'}
+            Contador: {numero}
 
-            <span> {props.nome} {props.idade} </span>
-
-            {props.children}
-
+            <button onClick={() => setNumero(numero + 1)}>
+                Click
+            </button>
         </div>
     )
 }
