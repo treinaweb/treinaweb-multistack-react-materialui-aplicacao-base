@@ -1,19 +1,19 @@
 
-import myStyle from './contador.module.css'
 import { useState } from 'react'
+import { MinhaDiv, MeuBotao } from './contador.styled'
 
 function Contador(props) {
     const [numero, setNumero] = useState(0)
 
 
     return (
-        <div className={myStyle['meu-contador']}>
-            Contador: {numero}
+        <MinhaDiv abc='1'>
+            Contador: <span> {numero} </span>
 
-            <button onClick={() => setNumero(numero + 1)}>
+            <MeuBotao variant='contained' onClick={() => setNumero(numero + 1)}>
                 Click
-            </button>
-        </div>
+            </MeuBotao>
+        </MinhaDiv>
     )
 }
 
